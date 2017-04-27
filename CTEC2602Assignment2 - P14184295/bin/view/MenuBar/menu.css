@@ -1,0 +1,13 @@
+.menu{
+	-fx-background-color: #3F3E3E;
+}
+
+.menu .label{
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+
+.menu-item .label{
+	-fx-text-fill: black;
+	-fx-font-weight: bold;
+}

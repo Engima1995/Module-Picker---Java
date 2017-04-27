@@ -1,0 +1,64 @@
+package view;
+
+import javafx.scene.control.Tab;
+import javafx.scene.control.TabPane;
+import javafx.scene.control.TabPane.TabClosingPolicy;
+import javafx.scene.layout.BorderPane;
+import view.OverviewPane.OverviewPane;
+import view.MenuBar.ModuleChooserMenuBar;
+import view.ModulePane.ModulesPane;
+import view.StudentProfilePane.StudentProfilePane;
+
+
+public class RootPane extends BorderPane{
+	
+	private TabPane tp;
+	private ModuleChooserMenuBar mb;
+	private StudentProfilePane spp;
+	private ModulesPane mp;
+	private OverviewPane op;
+	
+	public RootPane(){
+		
+		this.getStylesheets().add(getClass().getResource("root.css").toExternalForm());
+		this.getStyleClass().add("rootpane");
+		
+		mb = new ModuleChooserMenuBar();
+		spp = new StudentProfilePane();
+		mp = new ModulesPane();
+		op = new OverviewPane();
+		
+		tp = new TabPane();
+		tp.setTabClosingPolicy(TabClosingPolicy.UNAVAILABLE);
+		Tab t1 = new Tab("Create Profile", spp);
+		Tab t2 = new Tab("Select Modules", mp);
+		Tab t3 = new Tab("Overview Selection", op);
+		
+		tp.getTabs().addAll(t1, t2, t3);
+		
+		this.setTop(mb);
+		this.setCenter(tp);
+		
+	}
+	
+	public ModuleChooserMenuBar getMenuBar(){
+		return mb;
+	}
+	
+	public StudentProfilePane getStudentProfilePane(){
+		return spp;
+	}
+	
+	public ModulesPane getModulesPane(){
+		return mp;
+	}	
+	
+	public OverviewPane getOverviewPane(){
+		return op;
+	}
+	
+	public void changeTab(int index) {
+		tp.getSelectionModel().select(index);
+	}
+	
+}

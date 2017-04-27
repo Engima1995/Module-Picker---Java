@@ -1,0 +1,22 @@
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+    -fx-font-weight: bold;
+    -fx-border-style: solid;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+
+.tab-pane .tab:selected
+{	
+    -fx-background-color: #E5E5E5;
+}
+
+
+

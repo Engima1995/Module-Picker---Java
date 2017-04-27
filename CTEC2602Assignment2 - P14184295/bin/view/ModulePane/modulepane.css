@@ -1,0 +1,20 @@
+.modulepane{
+	-fx-background-color: #E5E5E5;
+}
+
+#unselectedList, #selectedList, #currcredits{
+	-fx-border-style: solid;
+}
+
+.button{
+	-fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: #FF3434;
+    -fx-effect: dropshadow( one-pass-box , black , 2, 0, 0, 0);    
+}
+
+.button:hover{
+	-fx-text-fill: #FF3434;
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+}

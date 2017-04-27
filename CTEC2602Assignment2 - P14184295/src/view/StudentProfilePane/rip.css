@@ -1,0 +1,36 @@
+.inputpane{
+	-fx-background-color: #E5E5E5;
+}
+
+.label{
+	-fx-font-size: 12px;
+	-fx-font-weight: bold;
+	-fx-text-fill: #333333;
+	-fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 0, 0, 0, 1);
+}
+
+#combob, #textf, #datep{
+	-fx-font-weight: bold;
+	-fx-border-style: solid;
+}
+
+.button{
+	-fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: #FF3434;
+    -fx-effect: dropshadow( one-pass-box , black , 2, 0, 0, 0);    
+}
+
+.button:hover{
+	-fx-text-fill: #FF3434;
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+}
+
+#datep .button{
+	-fx-background-color: #FFFFFF;
+}
+
+#datep .button:hover{
+	-fx-background-color: #e5e5e5;
+}

@@ -1,0 +1,35 @@
+Course: Software Engineering
+P-Number: P23456789
+Firstname: aaaa
+Lastname: aaaaa
+Email: a@a.it
+Date Submitted: 2016-04-12
+
+Chosen Modules
+====================
+
+CTEC3902 : Rigorous Systems
+Mandatory Course: Yes
+Credits: 15
+
+CTEC3903 : Software Development Methods
+Mandatory Course: Yes
+Credits: 15
+
+IMAT3451 : Computing Project
+Mandatory Course: Yes
+Credits: 30
+
+IMAT3404 : Mobile Robotics
+Mandatory Course: No
+Credits: 15
+
+IMAT3429 : Privacy and Data Protection
+Mandatory Course: No
+Credits: 15
+
+IMAT3426 : Information Systems Strategy & Services
+Mandatory Course: No
+Credits: 30
+
+
